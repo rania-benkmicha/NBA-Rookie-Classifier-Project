@@ -16,7 +16,7 @@ This project focuses on building a machine learning model to predict whether a r
 
 1. **Data Preparation and Model Training**
    - Processed and cleaned the dataset.
-   - Trained and validated a classifier using appropriate statistical and machine learning techniques.
+   - Trained and validated a **classifier** using appropriate statistical and machine learning techniques.
    - Adjusted scoring functions to prioritize recall, ensuring promising players are identified.
 
 2. **Evaluation**
@@ -24,7 +24,7 @@ This project focuses on building a machine learning model to predict whether a r
    - Justified metrics and approaches used to align with the project's goal.
 
 3. **API Integration**
-   - Deployed the trained classifier as a RESTful API using [Flask/Django/other framework].
+   - Deployed the trained classifier as a RESTful API using **Flask**.
    - API accepts player statistics as input and returns a prediction on their potential to last more than 5 years in the NBA.
 
 ## Usage
