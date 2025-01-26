@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interface Utilisateur</title>
+</head>
+<body>
+    
+    <h1>NBA PLAYER PERFORMANCE</h1>
+    <form action="/predict" method="post">
+        
+        <label for="GP">games played:</label>
+        <input type="int" id="GP" name="GP" required><br>
+        
+        <label for="FG%">field goal percent:</label>
+        <input type="float" id="FG%" name="FG%" required><br>
+        
+        <label for="3P%">3 point percent:</label>
+        <input type="float" id="3p%" name="3p%" required><br>
+        
+        
+        <label for="FT%">free throw percent:</label>
+        <input type="float" id="FT%" name="FT%" required><br>
+        
+        <label for="AST">assists:</label>
+        <input type="float" id="AST" name="AST" required><br>
+        
+        <label for="STL">steals:</label>
+        <input type="float" id="STL" name="STL" required><br>
+        
+        
+        <label for="BLK">blocks:</label>
+        <input type="float" id="BLK" name="BLK" required><br>
+        
+        <label for="TOV">turnovers:</label>
+        <input type="float" id="TOV" name="TOV" required><br>
+        
+        <label for="shooting efficiency">shooting efficiency:</label>
+        <input type="float" id="shooting efficiency_" name="shooting efficiency_" required><br>
+        
+        <label for="ratio of defensive rebound">ratio of defensive rebound:</label>
+        <input type="float" id="ratio of defensive rebound" name="ratio of defensive rebound" required><br>
+        
+        <!-- Ajoutez d'autres champs selon vos besoins -->
+        <button type="submit">Prédire</button>
+    </form>
+    
+    <p align="right">
+        <img src="{{ url_for('static', filename='images/nba.jpg') }}" alt="NBA GAME">
+    </p>
+</body>
+</html>
